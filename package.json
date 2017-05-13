@@ -1,0 +1,58 @@
+{
+  "name": "object-keys-normalizer",
+  "version": "1.0.0",
+  "description": "Deeply normalizes object keys (included nested objects and objects in arrays) to the format of your choosing.",
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "ava": {
+    "files": [
+      "./dist/tests/*.js",
+      "./dist/tests/**/*.js"
+    ],
+    "concurrency": 4,
+    "failFast": true
+  },
+  "scripts": {
+    "clean": "rm -Rf ./dist",
+    "build": "npm run clean; tsc",
+    "lint": "tslint 'src/**/*.ts?(x)'",
+    "prepublish": "npm run build",
+    "test": "npm run build && ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xpepermint/object-keys-normalizer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xpepermint/object-keys-normalizer/issues"
+  },
+  "homepage": "https://github.com/xpepermint/object-keys-normalizer#readme",
+  "keywords": [
+    "object",
+    "objects",
+    "key",
+    "keys",
+    "normalize",
+    "normalizer",
+    "normalization",
+    "edit",
+    "change",
+    "camel",
+    "snake",
+    "upper",
+    "lower",
+    "pascal"
+  ],
+  "author": "Kristijan Sedlak (Xpepermint)",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "lodash.clonedeep": "4.5.0",
+    "tslint": "^5.1.0",
+    "typescript": "^2.2.2"
+  },
+  "dependencies": {
+    "lodash.camelcase": "^4.3.0",
+    "lodash.snakecase": "^4.1.1"
+  }
+}
