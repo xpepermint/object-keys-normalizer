@@ -1,6 +1,6 @@
 {
   "name": "object-keys-normalizer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Deeply normalizes object keys (included nested objects and objects in arrays) to the format of your choosing.",
   "main": "./dist/src/index.js",
   "types": "./dist/src/index.d.ts",
@@ -40,8 +40,7 @@
     "camel",
     "snake",
     "upper",
-    "lower",
-    "pascal"
+    "lower"
   ],
   "author": "Kristijan Sedlak (Xpepermint)",
   "license": "MIT",
